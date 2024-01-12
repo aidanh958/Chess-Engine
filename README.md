@@ -8,7 +8,15 @@ function prep(board, color) {}
 function think(board, color) {}
 ```
 the prep function will be called before the game begins the board passed in will be the default starting position and your color.
-the think function will be called everytime its the bots turn to make a move. It must return a legal move in the format of `[from, to]`.
+the think function will be called every time the bots turn to make a move. It must return a legal move in the format of `[from, to]`.
+## how to switch the bot?
+### bot files
+in the `automation.js` file at the top, there is an object called `src` which contains `bot`, `botA`, and `botB`. The `bot` URL is for human vs bot. The `botA` and `botB` URLs are for bot vs bot.
+### competition modes
+the mode variable can be set to `0`, `1`, or `2`. 
+Mode `0` is human vs bot. 
+Mode `1` is a bot vs bot single game. 
+Mode `2` is a bot vs bot with infinite games.
 ## API
 ### Helper.getLegalMoves(board, color);
 the `Helper.getLegalMoves` function takes in the board and color. It will return something like:
