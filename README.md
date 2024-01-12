@@ -1,4 +1,7 @@
 # Chess-Engine
+## hot to start?
+run `git clone ""` then run `node host.js` and open `localhost:8080/index.html`.
+
 ## how to make the bot?
 in the bots folder you can create a file the uses the API to create a bot.
 at first there are 2 examples that in the bot folder "bot.js" and "example.js" these are basic example to help get started.
