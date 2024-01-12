@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            background-color: black;
+        }
+        canvas {
+            background-color: white;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        img {
+            display: none;
+        }
+        #text {
+            position: fixed;
+            left: 50%;
+            top: 0%;
+            font-size: 40px;
+            transform: translateX(-50%);
+            color: white;
+        }
+
+        #wScore {
+            position: fixed;
+            width: 200px;
+            height: 5px;
+            
+            left: 50%;
+            top: 50%;
+            transform: translateX(-250px) translateY(-255px);
+            background-color: green;
+            display: none;
+        }
+        #dScore {
+            position: fixed;
+            width: 500px;
+            height: 5px;
+            
+            left: 50%;
+            top: 50%;
+            transform: translateX(-250px) translateY(-255px);
+            background-color: black;
+            display: none;
+        }
+        #lScore {
+            position: fixed;
+            width: 200px;
+            height: 5px;
+            
+            left: 50%;
+            top: 50%;
+            transform: translateX(50px) translateY(-255px);
+            background-color: red;
+            display: none;
+        }
+    </style>
+    <body>
+        <div id="text"></div>
+
+        <div id="dScore"></div>
+        <div id="wScore"></div>
+        <div id="lScore"></div>
+    
+        <canvas id="c"></canvas>
+        <script src="./bitboard.js"></script>
+        <script src="./legalMoves.js"></script>
+        <script src="./script.js"></script>
+        <script src="./humanInput.js"></script>
+        <script src="./botInputHandler.js"></script>
+        <script src="./automation.js"></script>
+
+        <img src="https://images.chesscomfiles.com/chess-themes/pieces/neo/150/bp.png" id="bp" />
+        <img src="https://images.chesscomfiles.com/chess-themes/pieces/neo/150/br.png" id="br" />
+        <img src="https://images.chesscomfiles.com/chess-themes/pieces/neo/150/bn.png" id="bn" />
+        <img src="https://images.chesscomfiles.com/chess-themes/pieces/neo/150/bb.png" id="bb" />
+        <img src="https://images.chesscomfiles.com/chess-themes/pieces/neo/150/bq.png" id="bq" />
+        <img src="https://images.chesscomfiles.com/chess-themes/pieces/neo/150/bk.png" id="bk" />
+        
+        <img src="https://images.chesscomfiles.com/chess-themes/pieces/neo/150/wp.png" id="wp" />
+        <img src="https://images.chesscomfiles.com/chess-themes/pieces/neo/150/wr.png" id="wr" />
+        <img src="https://images.chesscomfiles.com/chess-themes/pieces/neo/150/wn.png" id="wn" />
+        <img src="https://images.chesscomfiles.com/chess-themes/pieces/neo/150/wb.png" id="wb" />
+        <img src="https://images.chesscomfiles.com/chess-themes/pieces/neo/150/wq.png" id="wq" />
+        <img src="https://images.chesscomfiles.com/chess-themes/pieces/neo/150/wk.png" id="wk" />
+    </body>
+</html>
