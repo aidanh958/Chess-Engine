@@ -5,13 +5,13 @@ at first there are 2 examples that in the bot folder "bot.js" and "example.js" t
 ## API
 ### Helper.getLegalMoves(board, color);
 the `Helper.getLegalMoves` function takes in the board and color. It will return something like:
-`
+```
 [
   // [from, to],
   [[x, y], [x, y]]
   ...
 ]
-`
+```
 ### Helper.makeMove(board, from, to);
 the `Helper.makeMove` function takes in the board and a pos from and pos to. You can easily optain legal positions using the `Helper.getLegalMoves` function. The function will act as if you just made the move and will mutate the board (only the bots version of the board).
 ### Helper.undoMove(board);
