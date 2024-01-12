@@ -2,6 +2,13 @@
 ## how to make the bot?
 in the bots folder you can create a file the uses the API to create a bot.
 at first there are 2 examples that in the bot folder "bot.js" and "example.js" these are basic example to help get started.
+## starting code
+```
+function prep(board, color) {}
+function think(board, color) {}
+```
+the prep function will be called before the game begins the board passed in will be the default starting position and your color.
+the think function will be called everytime its the bots turn to make a move. It must return a legal move in the format of `[from, to]`.
 ## API
 ### Helper.getLegalMoves(board, color);
 the `Helper.getLegalMoves` function takes in the board and color. It will return something like:
