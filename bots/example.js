@@ -37,7 +37,7 @@ function evaluate(board, color) {
 
             let p = Helper.getPiece(board, [x, y]).split("");
             let col = Helper.getColor(board, [x, y]);
-            evaluation += pieceValue[p[1]] * (col==color)?1:-1;
+            evaluation += pieceValue[p[1]] * ((col==color)?1:-1);
         }
     }
 
